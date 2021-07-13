@@ -1,9 +1,13 @@
+import Callout from 'nextra-theme-docs/callout'
+
+
 ## Create a pull request channel
+By default Axolo will create a Slack channel for every pull request that is being made.
 
-## Send every notification to Slack
+<Callout emoji="💡">You can choose **not** to create a slack channel by adding `_noslackchannel` (or `_nowarroom`) in the initial comment when you create a pull request.</Callout>
+
+## Send Github Action notifications
 => code review
-
-
 => deployment
 => Github actions
 
@@ -15,18 +19,54 @@
 </div>
 
 ## Request a review
+<br></br>
+<div style={{display:'flex', justifyContent:'center'}}>
+    <img 
+        src="https://axolo.s3.eu-west-3.amazonaws.com/communication/docs/request-a-review.png"
+        alt="Request a review"
+        style={{width:"200px"}}/>
+</div>
 
-## Edit pull request labels
+Request a review from Github and the person requested will automatically be added to the corresponding Slack channel.
+
+Alternatively you can also add a reviewer directly from the Slack channel that is being created like so:
+
+<Callout emoji="💡">Adding a team will automatically add all the members of the team.</Callout>
+<br></br>
 
 <div style={{display:'flex', justifyContent:'center'}}>
     <img 
-        src="https://axolo.s3.eu-west-3.amazonaws.com/communication/blog/prsettings.png"
-        alt="Axolo Github integration"
+        src="https://axolo.s3.eu-west-3.amazonaws.com/communication/docs/select_a_reviewer.png"
+        alt="Request a review"
+        style={{width:"450px"}}/>
+</div>
+
+
+## Edit pull request labels
+
+You can edit the pull request labels directly in Slack in the settings button or from Github. Either way it will be displayed in the Slack channel topics separated by a pipe (|) if there are many.
+<br></br>
+<br></br>
+
+<div style={{display:'flex', justifyContent:'center'}}>
+    <img 
+        src="https://axolo.s3.eu-west-3.amazonaws.com/communication/docs/labelsinslack.png"
+        alt="Edit labels"
         style={{width:"450px"}}/>
 </div>
 
 ## Stay on top of your team pull request 
-(Home view in Slack)
+
+By clicking on Axolo bot in your Slack you can have access to your pull requests:
+
+| Title  | Description  |
+|---|---|
+|  PR Awaiting your review | PR you've been assigned to that you need to review  |
+| Your draft PR  |  The PR where you are the creator that are in draft mode |
+| My pending PR  |  The PR where you are the creator and where you are awaiting review from one of your peers. |
+| All other open pull requests  |  Everything is in the title :) |
+
+See screenshot: 
 
 <div style={{display:'flex', justifyContent:'center'}}>
     <img 
@@ -36,9 +76,18 @@
 </div>
 
 ## Saving the Slack conversation in Github
+Axolo will automatically save your Slack conversations into Github whenever you close or merge a Pull Requests.
+
+<div style={{display:'flex', justifyContent:'center'}}>
+    <img 
+        src="https://axolo.s3.eu-west-3.amazonaws.com/communication/docs/slackconversationingithub.png"
+        alt="Saving slack conversations in github"
+        style={{width:"550px"}}/>
+</div>
+
 
 
 ## Do not create a channel for a specific pull request
-
+You can choose **not** to create a slack channel by adding `_noslackchannel` (or `_nowarroom`) in the initial comment when you create a pull request.
 <br></br>
 <br></br>
