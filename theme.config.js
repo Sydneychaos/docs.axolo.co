@@ -1,11 +1,14 @@
 export default {
-  repository: 'https://github.com/axolo-co/docs.axolo.co.git',
+  repository: 'https://github.com/axolo-co/docs.axolo.co',
+  docsRepository: 'https://github.com/axolo-co/docs.axolo.co',
+  branch: 'main',
   titleSuffix: ' – Axolo',
+  path: '/',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
+      <span className="mr-2 font-extrabold hidden md:inline">Axolo</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        The Next.js Site Builder
+        faster pull requests
       </span>
     </>
   ),
@@ -58,6 +61,7 @@ export default {
   ),
   search: true,
   prevLinks: true,
+  darkMode: true,
   nextLinks: true,
   footer: true,
   footerEditOnGitHubLink: true,
