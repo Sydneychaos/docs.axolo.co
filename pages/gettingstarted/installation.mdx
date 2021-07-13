@@ -1,0 +1,63 @@
+# Installation
+
+## Slack Installation (and scopes)
+
+To install Axolo, you’ll need to sign up from [our home page](https://axolo.co). We will require access to specific scopes in order to be able to push notifications and create channels as a Slack application.
+
+Requires Slack scopes:
+
+
+| Scope    |  Reason  |
+| :---     |          --- |
+| app_mentions:read | View messages that directly mention @axolo in conversations |
+| channels:manage | Manage public channels that Axolo has been added to and create new ones |
+| chat:write | Post messages in approved channels & conversations |
+| chat:write.public| Send messages to channels @axolo isn't a member of |
+| im:history | View messages and other content in direct messages that Axolo has been added to |
+| im:write | Start direct messages with people |
+| users:read | View people in a workspace |
+| users:read.email | View email addresses of people in a workspace |
+
+## Github installation (and scopes)
+When the Slack application is installed, you’ll be redirected to our [app.axolo.co/home](https://app.axolo.co/home) in order to install the Github application. 
+
+You’ll choose between installing Axolo on all of your organization repositories or select only specific repositories. 
+
+<div style={{display:'flex', justifyContent:'center'}}>
+    <img 
+        src="https://axolo.s3.eu-west-3.amazonaws.com/communication/docs/Github+installation.png"
+        alt="Axolo Github integration"
+        style={{width:"450px"}}/>
+</div>
+
+<Callout emoji="⚠">
+Axolo does not have access to your company’s code. Github code lies in the “Content API”. More information about Github scopes can be [found here](https://docs.github.com/en/rest/reference/permissions-required-for-github-apps#about-github-app-permissions).
+</Callout>
+
+Required Github scopes:
+
+| Scope        | Permission  | 
+| :---          |       ---: |
+| administration | Read |  
+| deployments |  Read |
+| members |  Read |
+| metadata |  Read |
+| repository hooks |  Read |
+| team discussions | Read |
+| issues |  Read & Write |
+| pull requests |  Read & Write |
+
+
+## Axolo onboarding
+Now that the Slack and the Github applications are configured, we only need to match Github members to Slack users. 
+
+
+<div style={{display:'flex', justifyContent:'center'}}>
+    <img 
+        src="https://axolo.s3.eu-west-3.amazonaws.com/communication/docs/selec_team_members.png"
+        alt="Select team members on Axolo"
+        style={{width:"550px"}}/>
+</div>
+
+🎉 That’s it! You can start using Axolo and select open pull requests in the same modal to create your first code review channels right away. 
+
